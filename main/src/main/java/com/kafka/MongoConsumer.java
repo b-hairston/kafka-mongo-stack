@@ -29,7 +29,7 @@ public class MongoConsumer {
             MongoDatabase database = mongoClient.getDatabase("mydatabase");
             MongoCollection<Document> collection = database.getCollection("messages");
 
-            // Assuming you're fetching or producing Kafka messages here
+            // Fetch sample msgs from Kafka
             for (int i = 0; i < 1000; i++) {
                 // Create a document for the message
                 Document doc = new Document("topic", "fourth-topic")
